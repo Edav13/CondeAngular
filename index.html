@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app='condeAngularApp'>
 <head>
     <meta charset="utf-8">
     <title></title>
@@ -10,11 +10,20 @@
 </head>
 
 
-<body ng-app ng-init=" Creadores = ' Misko Hevery y Adam Abrons ' ">
-    AngularJS fue creado por {{Creadores}} hace sólo {{2016-2009}} años.
+<body ng-controller="AlumnoController">
+    <h1>Cuaderno Alumnos</h1>
+    <div ng-repeat = "alumno in alumnos">
+        <div>
+            {{alumno.nombre}} - {{alumno.telefono}} 
+            <br>
+            <span>{{alumno.curso}}</span>
+        </div>
+    </div>
+
+
+
+
     <script src="js/angular.min.js" type="text/javascript"></script>
-
-
     <script>
         !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
             (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
@@ -35,5 +44,7 @@
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/controller.js" type="text/javascript"></script>
+
 </body>
 </html>
