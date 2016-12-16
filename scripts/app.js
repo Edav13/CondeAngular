@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name condeAngularApp
+ * @name pruebaApp
  * @description
- * # condeAngularApp
+ * # pruebaApp
  *
  * Main module of the application.
  */
 angular
-  .module('condeAngularApp', [
+  .module('pruebaApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
